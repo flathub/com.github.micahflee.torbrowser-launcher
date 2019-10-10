@@ -117,7 +117,7 @@ modules:
         paths:
           - remove-absolute-paths.patch
           - use-standard-icon-location.patch
-          - use-correct-desktop-id-in-AppData.patch
+          - fix-AppData-file.patch
           - change-gpg-binary-name.patch
           - use-correct-sys-prefix.patch
           - use-xdg-home-vars.patch

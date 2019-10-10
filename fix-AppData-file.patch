@@ -1,13 +1,23 @@
 diff --git a/share/metainfo/torbrowser.appdata.xml b/share/metainfo/torbrowser.appdata.xml
-index 5577868..dfc51fe 100644
+index 5577868..f4b6d67 100644
 --- a/share/metainfo/torbrowser.appdata.xml
 +++ b/share/metainfo/torbrowser.appdata.xml
 @@ -1,7 +1,7 @@
  <?xml version="1.0" encoding="UTF-8"?>
  <!-- Copyright 2014 Micah Lee <micah@micahflee.com> -->
- <component>
+-<component>
 - <id>org.torproject.torbrowser.desktop</id>
++<component type="desktop-application">
 + <id>torbrowser.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <name>Tor Browser Launcher</name>
+@@ -27,4 +27,8 @@
+  </screenshots>
+  <url type="homepage">https://github.com/micahflee/torbrowser-launcher</url>
+  <update_contact>micah@micahflee.com</update_contact>
++ <content_rating type="oars-1.1"/>
++ <releases>
++  <release version="0.3.2" date="2019-07-20"/>
++ </releases>
+ </component>
