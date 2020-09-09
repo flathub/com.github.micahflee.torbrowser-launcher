@@ -121,6 +121,7 @@ modules:
           - change-gpg-binary-name.patch
           - use-correct-sys-prefix.patch
           - use-xdg-home-vars.patch
+          - update-tor-browser-developers-public-key.patch
     build-commands:
       - "python3 setup.py install --prefix=/app --root=/ --optimize=1"
     post-install:
