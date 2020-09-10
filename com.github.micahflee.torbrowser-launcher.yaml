@@ -17,45 +17,43 @@ finish-args:
 modules:
   - shared-modules/dbus-glib/dbus-glib-0.110.json
 
-  - name: python3-sip
-    buildsystem: simple
-    build-commands:
-      - python3 configure.py
-        --bindir=/app/bin
-        --destdir=/app/lib/python3.7/site-packages
-        --incdir=/app/include/python3.7
-        --sipdir=/app/share/sip
-        --stubsdir=/app/lib/python3.7/site-packages
-        --sip-module=PyQt5.sip
-      - make -j $FLATPAK_BUILDER_N_JOBS
-      - make install
-    cleanup:
-      - /bin
-    sources:
-      - type: archive
-        url: https://www.riverbankcomputing.com/static/Downloads/sip/4.19.18/sip-4.19.18.tar.gz
-        sha256: c0bd863800ed9b15dcad477c4017cdb73fa805c25908b0240564add74d697e1e
-
   - name: python3-pyqt
     buildsystem: simple
     build-commands:
-      - QMAKEPATH=/app/lib python3 configure.py
-        --confirm-license
-        --sip-incdir=/app/include/python3.7
-        --bindir=/app/bin
-        --destdir=/app/lib/python3.7/site-packages
-        --designer-plugindir=/app/lib/plugins/designer
-        --qml-plugindir=/app/lib/plugins/PyQt5
-        --sipdir=/app/share/sip
-        --stubsdir=/app/lib/python3.7/site-packages/PyQt5
-      - make -j $FLATPAK_BUILDER_N_JOBS
-      - make install
+      - "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=/app PyQt5"
     cleanup:
       - /bin
     sources:
-      - type: archive
-        url: https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.12.2/PyQt5_gpl-5.12.2.tar.gz
-        sha256: c565829e77dc9c281aa1a0cdf2eddaead4e0f844cbaf7a4408441967f03f5f0f
+      - type: file
+        url: https://files.pythonhosted.org/packages/7c/1b/9b68465658cda69f33c31c4dbd511ac5648835680ea8de87ce05c81f95bf/setuptools-50.3.0.zip
+        sha256: 39060a59d91cf5cf403fa3bacbb52df4205a8c3585e0b9ba4b30e0e19d4c4b18
+      - type: file
+        url: https://files.pythonhosted.org/packages/83/72/611c121b6bd15479cb62f1a425b2e3372e121b324228df28e64cc28b01c2/wheel-0.35.1.tar.gz
+        sha256: 99a22d87add3f634ff917310a3d87e499f19e663413a52eb9232c447aa646c9f
+      - type: file
+        url: https://files.pythonhosted.org/packages/37/fd/5bc6351d5d279c797a1d78fec3483a6a9e4b8628073a8ed5448fbe1cf038/PyQt-builder-1.5.0.tar.gz
+        sha256: 11bbe26e8e3d5ffec6d2ef2f50596b1670eb2d8b49aee0f859821922d8282841
+      - type: file
+        url: https://files.pythonhosted.org/packages/55/fd/fc1aca9cf51ed2f2c11748fa797370027babd82f87829c7a8e6dbe720145/packaging-20.4.tar.gz
+        sha256: 4357f74f47b9c12db93624a82154e9b120fa8293699949152b22065d556079f8
+      - type: file
+        url: https://files.pythonhosted.org/packages/da/24/84d5c108e818ca294efe7c1ce237b42118643ce58a14d2462b3b2e3800d5/toml-0.10.1.tar.gz
+        sha256: 926b612be1e5ce0634a2ca03470f95169cf16f939018233a670519cb4ac58b0f
+      - type: file
+        url: https://files.pythonhosted.org/packages/c1/47/dfc9c342c9842bbe0036c7f763d2d6686bcf5eb1808ba3e170afdb282210/pyparsing-2.4.7.tar.gz
+        sha256: c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1
+      - type: file
+        url: https://files.pythonhosted.org/packages/6b/34/415834bfdafca3c5f451532e8a8d9ba89a21c9743a0c59fbd0205c7f9426/six-1.15.0.tar.gz
+        sha256: 30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259
+      - type: file
+        url: https://files.pythonhosted.org/packages/af/68/c603a9d6319ef1126187c42e0b13ac5fcf556d040feded2e574e1a6a27e4/sip-5.4.0.tar.gz
+        sha256: 4282ab45948674f5ef74278a8e70d1302f65c95b519a0af19409002f5715d641
+      - type: file
+        url: https://files.pythonhosted.org/packages/73/8c/c662b7ebc4b2407d8679da68e11c2a2eb275f5f2242a92610f6e5024c1f2/PyQt5_sip-12.8.1.tar.gz
+        sha256: 30e944db9abee9cc757aea16906d4198129558533eb7fadbe48c5da2bd18e0bd
+      - type: file
+        url: https://files.pythonhosted.org/packages/8c/90/82c62bbbadcca98e8c6fa84f1a638de1ed1c89e85368241e9cc43fcbc320/PyQt5-5.15.0.tar.gz
+        sha256: c6f75488ffd5365a65893bc64ea82a6957db126fbfe33654bcd43ae1c30c52f9
 
   - name: SWIG
     config-opts:
@@ -66,16 +64,16 @@ modules:
       - /share/swig
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/swig/files/swig/swig-4.0.1/swig-4.0.1.tar.gz
-        sha256: 7a00b4d0d53ad97a14316135e2d702091cd5f193bb58bcfcd8bc59d41e7887a9
+        url: https://sourceforge.net/projects/swig/files/swig/swig-4.0.2/swig-4.0.2.tar.gz
+        sha256: d53be9730d8d58a16bf0cbd1f8ac0c0c3e1090573168bfa151b01eb47fa906fc
 
   - name: gpgme
     config-opts:
       - --enable-languages=python
     sources:
       - type: archive
-        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.13.1.tar.bz2
-        sha256: c4e30b227682374c23cddc7fdb9324a99694d907e79242a25a4deeedb393be46
+        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.14.0.tar.bz2
+        sha256: cef1f710a6b0d28f5b44242713ad373702d1466dcbe512eb4e754d7f35cd4307
 
   - name: python3-requests
     buildsystem: simple
@@ -83,17 +81,17 @@ modules:
       - "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=/app requests"
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/ad/13/eb56951b6f7950cadb579ca166e448ba77f9d24efc03edd7e55fa57d04b7/idna-2.8.tar.gz
-        sha256: c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407
+        url: https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz
+        sha256: b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6
       - type: file
-        url: https://files.pythonhosted.org/packages/52/2c/514e4ac25da2b08ca5a464c50463682126385c4272c18193876e91f4bc38/requests-2.21.0.tar.gz
-        sha256: 502a824f31acdacb3a35b6690b5fbf0bc41d63a24a45c4004352b0242707598e
+        url: https://files.pythonhosted.org/packages/da/67/672b422d9daf07365259958912ba533a0ecab839d4084c487a5fe9a5405f/requests-2.24.0.tar.gz
+        sha256: b3559a131db72c33ee969480840fff4bb6dd111de7dd27c8ee1f820f4f00231b
       - type: file
-        url: https://files.pythonhosted.org/packages/55/54/3ce77783acba5979ce16674fc98b1920d00b01d337cfaaf5db22543505ed/certifi-2018.11.29.tar.gz
-        sha256: 47f9c83ef4c0c621eaef743f133f09fa8a74a9b75f037e8624f83bd1b6626cb7
+        url: https://files.pythonhosted.org/packages/40/a7/ded59fa294b85ca206082306bba75469a38ea1c7d44ea7e1d64f5443d67a/certifi-2020.6.20.tar.gz
+        sha256: 5930595817496dd21bb8dc35dad090f1c2cd0adfaf21204bf6732ca5d8ee34d3
       - type: file
-        url: https://files.pythonhosted.org/packages/b1/53/37d82ab391393565f2f831b8eedbffd57db5a718216f82f1a8b4d381a1c1/urllib3-1.24.1.tar.gz
-        sha256: de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22
+        url: https://files.pythonhosted.org/packages/81/f4/87467aeb3afc4a6056e1fe86626d259ab97e1213b1dfec14c7cb5f538bf0/urllib3-1.25.10.tar.gz
+        sha256: 91056c15fa70756691db97756772bb1eb9678fa585d9184f24534b100dc60f4a
       - type: file
         url: https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz
         sha256: 84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae
@@ -104,8 +102,8 @@ modules:
       - "python3 setup.py install --prefix=/app --root=/"
     sources:
       - type: archive
-        url: https://pypi.python.org/packages/53/12/6bf1d764f128636cef7408e8156b7235b150ea31650d0260969215bb8e7d/PySocks-1.6.8.tar.gz
-        sha256: 3fe52c55890a248676fd69dc9e3c4e811718b777834bcaab7a8125cf9deac672
+        url: https://files.pythonhosted.org/packages/bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-1.7.1.tar.gz
+        sha256: 3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0
 
   - name: torbrowser-launcher
     buildsystem: simple
@@ -121,6 +119,7 @@ modules:
           - change-gpg-binary-name.patch
           - use-correct-sys-prefix.patch
           - use-xdg-home-vars.patch
+          - update-tor-browser-developers-public-key.patch
     build-commands:
       - "python3 setup.py install --prefix=/app --root=/ --optimize=1"
     post-install:
