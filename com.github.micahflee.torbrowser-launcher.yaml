@@ -109,18 +109,13 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://github.com/micahflee/torbrowser-launcher/archive/v0.3.2.tar.gz
-        sha256: 25ad4b0c70579628bf18f4cdcd18ac303fe4f7f1c590cc48df2a87651c92991c
+        url: https://github.com/micahflee/torbrowser-launcher/archive/v0.3.3.tar.gz
+        sha256: 58b17bd5a9a6f35fe78d83e69fdf77919ffa8c2492b1add1d47aed6237794f93
       - type: patch
         paths:
-          - remove-absolute-paths.patch
-          - use-standard-icon-location.patch
           - fix-AppData-file.patch
           - change-gpg-binary-name.patch
           - use-correct-sys-prefix.patch
-          - use-xdg-home-vars.patch
-          - update-tor-browser-developers-public-key.patch
-          - use-better-version-string-comparison.patch
     build-commands:
       - "python3 setup.py install --prefix=/app --root=/ --optimize=1"
     post-install:
