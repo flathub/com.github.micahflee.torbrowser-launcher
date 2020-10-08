@@ -20,7 +20,7 @@ modules:
   - name: python3-pyqt
     buildsystem: simple
     build-commands:
-      - "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=/app PyQt5"
+      - "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} PyQt5"
     cleanup:
       - /bin
     sources:
@@ -78,7 +78,7 @@ modules:
   - name: python3-requests
     buildsystem: simple
     build-commands:
-      - "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=/app requests"
+      - "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} requests"
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz
@@ -99,30 +99,40 @@ modules:
   - name: python3-socks
     buildsystem: simple
     build-commands:
-      - "python3 setup.py install --prefix=/app --root=/"
+      - "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/"
     sources:
       - type: archive
         url: https://files.pythonhosted.org/packages/bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-1.7.1.tar.gz
         sha256: 3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0
 
+  - name: python3-packaging
+    buildsystem: simple
+    build-commands:
+      - "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} packaging"
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl
+        sha256: 8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced
+      - type: file
+        url: https://files.pythonhosted.org/packages/46/19/c5ab91b1b05cfe63cccd5cfc971db9214c6dd6ced54e33c30d5af1d2bc43/packaging-20.4-py2.py3-none-any.whl
+        sha256: 998416ba6962ae7fbd6596850b80e17859a5753ba17c32284f67bfff33784181
+      - type: file
+        url: https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl
+        sha256: ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b
+
   - name: torbrowser-launcher
     buildsystem: simple
     sources:
       - type: archive
-        url: https://github.com/micahflee/torbrowser-launcher/archive/v0.3.2.tar.gz
-        sha256: 25ad4b0c70579628bf18f4cdcd18ac303fe4f7f1c590cc48df2a87651c92991c
+        url: https://github.com/micahflee/torbrowser-launcher/archive/v0.3.3.tar.gz
+        sha256: 58b17bd5a9a6f35fe78d83e69fdf77919ffa8c2492b1add1d47aed6237794f93
       - type: patch
         paths:
-          - remove-absolute-paths.patch
-          - use-standard-icon-location.patch
           - fix-AppData-file.patch
           - change-gpg-binary-name.patch
           - use-correct-sys-prefix.patch
-          - use-xdg-home-vars.patch
-          - update-tor-browser-developers-public-key.patch
-          - use-better-version-string-comparison.patch
     build-commands:
-      - "python3 setup.py install --prefix=/app --root=/ --optimize=1"
+      - "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1"
     post-install:
       - "sed -i 's:Icon=torbrowser:Icon=com.github.micahflee.torbrowser-launcher:' /app/share/applications/torbrowser-settings.desktop"
       - "mv /app/share/applications/torbrowser-settings.desktop /app/share/applications/com.github.micahflee.torbrowser-launcher.settings.desktop"
