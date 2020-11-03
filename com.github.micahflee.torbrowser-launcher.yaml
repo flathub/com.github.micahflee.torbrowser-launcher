@@ -131,6 +131,7 @@ modules:
           - fix-AppData-file.patch
           - change-gpg-binary-name.patch
           - use-correct-sys-prefix.patch
+          - remove-platform-dist.patch
     build-commands:
       - "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1"
     post-install:
