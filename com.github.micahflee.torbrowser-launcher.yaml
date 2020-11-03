@@ -1,6 +1,6 @@
 app-id: com.github.micahflee.torbrowser-launcher
 runtime: org.kde.Platform
-runtime-version: '5.14'
+runtime-version: '5.15'
 sdk: org.kde.Sdk
 separate-locales: false
 command: torbrowser-launcher
@@ -131,6 +131,7 @@ modules:
           - fix-AppData-file.patch
           - change-gpg-binary-name.patch
           - use-correct-sys-prefix.patch
+          - remove-platform-dist.patch
     build-commands:
       - "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1"
     post-install:
