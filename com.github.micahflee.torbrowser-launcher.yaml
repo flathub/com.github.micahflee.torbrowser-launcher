@@ -133,6 +133,7 @@ modules:
           - use-correct-sys-prefix.patch
           - remove-platform-dist.patch
           - add-czech-desktop-translation.patch
+          - update-developers-key.patch
     build-commands:
       - "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1"
     post-install:

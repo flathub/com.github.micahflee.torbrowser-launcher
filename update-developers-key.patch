@@ -1,0 +1,44 @@
+diff --git a/share/torbrowser-launcher/tor-browser-developers.asc b/share/torbrowser-launcher/tor-browser-developers.asc
+index 796eda2..54da716 100644
+--- a/share/torbrowser-launcher/tor-browser-developers.asc
++++ b/share/torbrowser-launcher/tor-browser-developers.asc
+@@ -81,7 +81,7 @@ I2dKBBuEQMikQLgfuEoGF/5zueWJdLjEDESeZB9nXgWEaADwiH+nzcuUYivCYR2y
+ szRpRTv2GwcUoYbT1Cb8L3Qy77xq21BiOxs5OWylfUS0yLZN9XOP/qwa5MDPmpS1
+ kAw3IcBf9MA825PFxXQY/mv9rvd5gmip+vfwBT8F3ZvXzQHAWBF0bXTONmp/Cxuj
+ jE1PkJBQ+mOg5x/wyYEVw+HkfZgSIwfVFFJ+MXkKYeXXVHg5+lubABEBAAGJBHIE
+-GAEKACYCGwIWIQTvbiht2oXqKkun3mhOLG6HkymCkAUCXxep8QUJBNOafQJAwXQg
++GAEKACYCGwIWIQTvbiht2oXqKkun3mhOLG6HkymCkAUCX9bPawUJBbpM9wJAwXQg
+ BBkBCgAdFiEEEQd1tdEB+za8bJEb63dEkdn/BuIFAlsJ0HQACgkQ63dEkdn/BuLX
+ vQ//RG+DS4F2seyco6N+rA9nqTgjVbDHa2mSuxvjApVXGhFNkU6IXUMTfeBnUOR/
+ WNzN/B2kFlBsLvSCRovPZaltsFG2DpEhlA7nemwz7CZhE7ULg/4HIwn1t/xXbynM
+@@ -93,17 +93,17 @@ HACulPmUB+rBTC9y+86I8vhmwGK+Xjna1A4995/1cGBXstJCdLVbLzHQv6dwKU/w
+ ER8J18Hbujh4Ku//FAImuLuDQWVgXKmdrFz+UeiM1BlkIAcDcC/9EJxsSgFDUkF1
+ HZ/2hRDzpkm0dVtQpTiTf2NID9vx6pJBAHrL/Z2Q11bZWdeIz8CLxqPUUlBNfgr6
+ PmkIbL/4BHbjWp94iavcm0xq/ZKuR+4PvZ1Q9sqjAV4qrczSnf3Xal6gfzY9WcuC
+-wPu6FFNhuEtQ559gbwm+ii+eFAfpf1G8wRDdpnK9F+CQ3JEJEE4sboeTKYKQXBYP
+-+QEP09XFYVMjc03VyBDLcBBPqUHcPYoX/J/tfq9f0IylwE1wPNA8PobHi99eKqQi
+-ahxkeZgUujaDTDOGpsFKLCFFyXvEPwBv5iuvDrNRXLhwIXNFdpvz6gjo6kI2Sn8c
+-THfX1wbGyN9GvtoI96agmLtv6jgmLC9j7Hf+gPM/VhybbL2MCFPG70B0kxnEyEFx
+-j64e5kHKZLRzCOl+fiwTsaEX9L9z74Otx8uXOzh1ZHKtCpPk4N/Xfq99XgzmXVvU
+-aH6FDSiado6GN+W08zCczPTlhBHFpVRQXSbexw/mSgq9E+FpihqLOmrQdAy2b6Qz
+-36X8EVHy2NbNJbrjM9wzLxcxfjf8aeF9yS6/CDAdHiPRQKNLr+btFCAT3XZ9TYBC
+-wT7YPduK1pXsLvj4xbS+bOZ67YXTNFUXLLPNehcnwID4vbpg6ybm1VT6+i3Mz7em
+-6jYEgtZe0cO8S9AjxLHnsTIbak8lfGUtjuAl3j0mpRjc34tDLNiC7OmMTS4lJUDy
+-nelBL8UX5qHmR/0q70PljoGScWRPz3200i/f46idUInEPw2F/A1jPH+EgOnVCXjF
+-im4sXI02h3vYPcc1KoFIpAbEE9vJ/7ROoC8V65mIkBAKx/84LX89jy9mWBIx7rHU
+-US1tzdMLm/wtVT8TAm3xciJOxq6lOdfosxhTnm1v5SVE
+-=ODNf
++wPu6FFNhuEtQ559gbwm+ii+eFAfpf1G8wRDdpnK9F+CQ3JEJEE4sboeTKYKQyBsP
+++gLZ3+aX7f/9zE4NigvtqZrPSL1esr+h1BHZVVTFGfhjAUjuhvR+v0DtGL+ayLVf
++IVAM/MOELej46htLFNC+1pwVevPOtxxvfpdNIS1lyvCiD0vNIMPEMt4sZoe6GaTA
++1tRMBVyY+C5PjmBUOrFPDfFAIEct1OoCDqeDsyDFhR6hNbOz1hXj+r5z4DjaAqF8
++IyrGdAnC7iLCjdjgkiQRLvqFbXOR3nYxDkZnLUKZYmIspz6jAvbXJC/H8Ob0sFMs
++OK4+mv/lgheU2aoc6fKytxxX3l37MSxuBP8Q8HqPJ6uR2Fkpljcu4O6gl331Kgf+
++LnF2gzw/gCc+sVIaViK8RgjkAasHriQ9EWoVdE0PD2xzEzer0xG5kayEOnG2rkPb
++xE8iDZ1oS/n3P3H5aylXGiQ2iu7gPab1uz7I9pCynMU6LvHbav7pptZPnzJgH9bP
++H3BbhMomsfUwtmBirTA4+u3SFOxOEg99Fx38eyG/KLUvsGJnc9BliFCl6oFOLRdY
++YfZKtd616RvjKlJiuZ8ELe7Gs7e8UU3x7pRpC+ODtb7JbtsXc2Wp7v6miaAu0h54
+++FsfG3MJb0HgjLhCU4canCUgaPD4kvaYuZiDdFcW9oH9s4FGXazlJ2GxlvKVKR8y
++lK+uWmCh7QT33xX5HqlndvL1gKtKT2HkV0WyVRWcCDhX
++=HEIp
+ -----END PGP PUBLIC KEY BLOCK-----
