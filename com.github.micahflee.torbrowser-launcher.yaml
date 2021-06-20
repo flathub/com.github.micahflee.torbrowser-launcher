@@ -136,7 +136,9 @@ modules:
         url: https://github.com/micahflee/torbrowser-launcher/archive/v0.3.4.tar.gz
         sha256: 783224924574410755b3fdedb24d3649deeb7bb8207b0acd6e00a66fdb284630
       - type: patch
-        path: use-flatpak-sys-prefix.patch
+        paths:
+          - use-flatpak-sys-prefix.patch
+          - fix-pt_br-po-file.patch
     build-commands:
       - "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1"
     post-install:
