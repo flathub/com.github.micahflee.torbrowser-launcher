@@ -133,12 +133,11 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://github.com/micahflee/torbrowser-launcher/archive/v0.3.4.tar.gz
-        sha256: 783224924574410755b3fdedb24d3649deeb7bb8207b0acd6e00a66fdb284630
+        url: https://github.com/micahflee/torbrowser-launcher/archive/refs/tags/v0.3.5.tar.gz
+        sha256: b91e632974785d57b567121593aa0238348ca9568025ed71e0f041b960143414
       - type: patch
         paths:
           - use-flatpak-sys-prefix.patch
-          - fix-pt_br-po-file.patch
     build-commands:
       - "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1"
     post-install:
