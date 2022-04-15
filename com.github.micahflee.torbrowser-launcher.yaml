@@ -27,33 +27,63 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/88/fc/d17731c0cc67a5a8e385e4f47c3b0b186720e198b70f076ccb4676804a8f/setuptools-57.0.0.tar.gz
         sha256: 401cbf33a7bf817d08014d51560fc003b895c4cdc1a5b521ad2969e928a07535
+        x-checker-data:
+          type: pypi
+          name: setuptools
       - type: file
         url: https://files.pythonhosted.org/packages/ed/46/e298a50dde405e1c202e316fa6a3015ff9288423661d7ea5e8f22f589071/wheel-0.36.2.tar.gz
         sha256: e11eefd162658ea59a60a0f6c7d493a7190ea4b9a85e335b33489d9f17e0245e
+        x-checker-data:
+          type: pypi
+          name: wheel
       - type: file
         url: https://files.pythonhosted.org/packages/00/a4/67939cced6487b1856dfda5cafa4e7eb179df917f4964918a202c8ba46d3/PyQt-builder-1.10.1.tar.gz
         sha256: 967b0c7bac0331597e9f8c5b336660f173a9896830b721d6d025e14bde647e17
+        x-checker-data:
+          type: pypi
+          name: PyQt-builder
       - type: file
         url: https://files.pythonhosted.org/packages/86/3c/bcd09ec5df7123abcf695009221a52f90438d877a2f1499453c6938f5728/packaging-20.9.tar.gz
         sha256: 5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5
+        x-checker-data:
+          type: pypi
+          name: packaging
       - type: file
         url: https://files.pythonhosted.org/packages/be/ba/1f744cdc819428fc6b5084ec34d9b30660f6f9daaf70eead706e3203ec3c/toml-0.10.2.tar.gz
         sha256: b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f
+        x-checker-data:
+          type: pypi
+          name: toml
       - type: file
         url: https://files.pythonhosted.org/packages/c1/47/dfc9c342c9842bbe0036c7f763d2d6686bcf5eb1808ba3e170afdb282210/pyparsing-2.4.7.tar.gz
         sha256: c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1
+        x-checker-data:
+          type: pypi
+          name: pyparsing
       - type: file
         url: https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz
         sha256: 1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926
+        x-checker-data:
+          type: pypi
+          name: six
       - type: file
         url: https://files.pythonhosted.org/packages/f8/b2/fcd5e964eefce0737512fb4ea263308769c671c3b1b9b1e380a5008ffef0/sip-6.1.1.tar.gz
         sha256: 52d25af2fcd764c4e15cc9cd1350bdb0e63f52dfa2aa3c5e7679af7fde9f7e20
+        x-checker-data:
+          type: pypi
+          name: sip
       - type: file
         url: https://files.pythonhosted.org/packages/b1/40/dd8f081f04a12912b65417979bf2097def0af0f20c89083ada3670562ac5/PyQt5_sip-12.9.0.tar.gz
         sha256: d3e4489d7c2b0ece9d203ae66e573939f7f60d4d29e089c9f11daa17cfeaae32
+        x-checker-data:
+          type: pypi
+          name: PyQt5_sip
       - type: file
         url: https://files.pythonhosted.org/packages/8e/a4/d5e4bf99dd50134c88b95e926d7b81aad2473b47fde5e3e4eac2c69a8942/PyQt5-5.15.4.tar.gz
         sha256: 2a69597e0dd11caabe75fae133feca66387819fc9bc050f547e5551bce97e5be
+        x-checker-data:
+          type: pypi
+          name: PyQt5
 
   - name: SWIG
     config-opts:
@@ -66,6 +96,10 @@ modules:
       - type: archive
         url: https://sourceforge.net/projects/swig/files/swig/swig-4.0.2/swig-4.0.2.tar.gz
         sha256: d53be9730d8d58a16bf0cbd1f8ac0c0c3e1090573168bfa151b01eb47fa906fc
+        x-checker-data:
+          type: anitya
+          project-id: 4919
+          url-template: https://sourceforge.net/projects/swig/files/swig/swig-$version/swig-$version.tar.gz
 
   - name: gpgme
     config-opts:
@@ -74,6 +108,10 @@ modules:
       - type: archive
         url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.15.1.tar.bz2
         sha256: eebc3c1b27f1c8979896ff361ba9bb4778b508b2496c2fc10e3775a40b1de1ad
+        x-checker-data:
+          type: anitya
+          project-id: 1239
+          url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
 
   - name: python3-requests
     buildsystem: simple
@@ -83,18 +121,33 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz
         sha256: b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6
+        x-checker-data:
+          type: pypi
+          name: idna
       - type: file
         url: https://files.pythonhosted.org/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz
         sha256: 27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804
+        x-checker-data:
+          type: pypi
+          name: requests
       - type: file
         url: https://files.pythonhosted.org/packages/6d/78/f8db8d57f520a54f0b8a438319c342c61c22759d8f9a1cd2e2180b5e5ea9/certifi-2021.5.30.tar.gz
         sha256: 2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee
+        x-checker-data:
+          type: pypi
+          name: certifi
       - type: file
         url: https://files.pythonhosted.org/packages/94/40/c396b5b212533716949a4d295f91a4c100d51ba95ea9e2d96b6b0517e5a5/urllib3-1.26.5.tar.gz
         sha256: a7acd0977125325f516bda9735fa7142b909a8d01e8b2e4c8108d0984e6e0098
+        x-checker-data:
+          type: pypi
+          name: urllib3
       - type: file
         url: https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz
         sha256: 0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa
+        x-checker-data:
+          type: pypi
+          name: chardet
 
   - name: python3-socks
     buildsystem: simple
@@ -104,6 +157,9 @@ modules:
       - type: archive
         url: https://files.pythonhosted.org/packages/bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-1.7.1.tar.gz
         sha256: 3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0
+        x-checker-data:
+          type: pypi
+          name: PySocks
 
   - name: python3-packaging
     buildsystem: simple
@@ -113,12 +169,24 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
         sha256: 8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
+        x-checker-data:
+          type: pypi
+          name: six
+          packagetype: bdist_wheel
       - type: file
         url: https://files.pythonhosted.org/packages/3e/89/7ea760b4daa42653ece2380531c90f64788d979110a2ab51049d92f408af/packaging-20.9-py2.py3-none-any.whl
         sha256: 67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a
+        x-checker-data:
+          type: pypi
+          name: packaging
+          packagetype: bdist_wheel
       - type: file
         url: https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl
         sha256: ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b
+        x-checker-data:
+          type: pypi
+          name: pyparsing
+          packagetype: bdist_wheel
 
   - name: python3-distro
     buildsystem: simple
@@ -128,6 +196,10 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/25/b7/b3c4270a11414cb22c6352ebc7a83aaa3712043be29daa05018fd5a5c956/distro-1.5.0-py2.py3-none-any.whl
         sha256: df74eed763e18d10d0da624258524ae80486432cd17392d9c3d96f5e83cd2799
+        x-checker-data:
+          type: pypi
+          name: distro
+          packagetype: bdist_wheel
 
   - name: torbrowser-launcher
     buildsystem: simple
@@ -135,6 +207,10 @@ modules:
       - type: archive
         url: https://github.com/micahflee/torbrowser-launcher/archive/refs/tags/v0.3.5.tar.gz
         sha256: 623cd77c6095711f371fee5b5cc521ecd8dd89d964b75fad6449633d10925089
+        x-checker-data:
+          type: anitya
+          project-id: 6359
+          url-template: https://github.com/micahflee/torbrowser-launcher/archive/refs/tags/v$version.tar.gz
       - type: patch
         path: use-flatpak-sys-prefix.patch
     build-commands:
