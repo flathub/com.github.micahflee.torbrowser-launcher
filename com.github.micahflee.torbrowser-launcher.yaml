@@ -25,35 +25,77 @@ modules:
       - /bin
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/88/fc/d17731c0cc67a5a8e385e4f47c3b0b186720e198b70f076ccb4676804a8f/setuptools-57.0.0.tar.gz
-        sha256: 401cbf33a7bf817d08014d51560fc003b895c4cdc1a5b521ad2969e928a07535
+        url: https://files.pythonhosted.org/packages/ea/a3/3d3cbbb7150f90c4cf554048e1dceb7c6ab330e4b9138a40e130a4cc79e1/setuptools-62.1.0.tar.gz
+        sha256: 47c7b0c0f8fc10eec4cf1e71c6fdadf8decaa74ffa087e68cd1c20db7ad6a592
+        x-checker-data:
+          type: pypi
+          name: setuptools
       - type: file
-        url: https://files.pythonhosted.org/packages/ed/46/e298a50dde405e1c202e316fa6a3015ff9288423661d7ea5e8f22f589071/wheel-0.36.2.tar.gz
-        sha256: e11eefd162658ea59a60a0f6c7d493a7190ea4b9a85e335b33489d9f17e0245e
+        url: https://files.pythonhosted.org/packages/c0/6c/9f840c2e55b67b90745af06a540964b73589256cb10cc10057c87ac78fc2/wheel-0.37.1.tar.gz
+        sha256: e9a504e793efbca1b8e0e9cb979a249cf4a0a7b5b8c9e8b65a5e39d49529c1c4
+        x-checker-data:
+          type: pypi
+          name: wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/00/a4/67939cced6487b1856dfda5cafa4e7eb179df917f4964918a202c8ba46d3/PyQt-builder-1.10.1.tar.gz
-        sha256: 967b0c7bac0331597e9f8c5b336660f173a9896830b721d6d025e14bde647e17
+        url: https://files.pythonhosted.org/packages/8b/5f/1bd49787262ddce37b826ef49dcccf5a9970facf0ed363dee5ee233e681d/PyQt-builder-1.12.2.tar.gz
+        sha256: f62bb688d70e0afd88c413a8d994bda824e6cebd12b612902d1945c5a67edcd7
+        x-checker-data:
+          type: pypi
+          name: PyQt-builder
       - type: file
-        url: https://files.pythonhosted.org/packages/86/3c/bcd09ec5df7123abcf695009221a52f90438d877a2f1499453c6938f5728/packaging-20.9.tar.gz
-        sha256: 5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5
+        url: https://files.pythonhosted.org/packages/df/9e/d1a7217f69310c1db8fdf8ab396229f55a699ce34a203691794c5d1cad0c/packaging-21.3.tar.gz
+        sha256: dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb
+        x-checker-data:
+          type: pypi
+          name: packaging
       - type: file
         url: https://files.pythonhosted.org/packages/be/ba/1f744cdc819428fc6b5084ec34d9b30660f6f9daaf70eead706e3203ec3c/toml-0.10.2.tar.gz
         sha256: b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f
+        x-checker-data:
+          type: pypi
+          name: toml
       - type: file
-        url: https://files.pythonhosted.org/packages/c1/47/dfc9c342c9842bbe0036c7f763d2d6686bcf5eb1808ba3e170afdb282210/pyparsing-2.4.7.tar.gz
-        sha256: c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1
+        url: https://files.pythonhosted.org/packages/31/df/789bd0556e65cf931a5b87b603fcf02f79ff04d5379f3063588faaf9c1e4/pyparsing-3.0.8.tar.gz
+        sha256: 7bf433498c016c4314268d95df76c81b842a4cb2b276fa3312cfb1e1d85f6954
+        x-checker-data:
+          type: pypi
+          name: pyparsing
       - type: file
         url: https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz
         sha256: 1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926
+        x-checker-data:
+          type: pypi
+          name: six
       - type: file
-        url: https://files.pythonhosted.org/packages/f8/b2/fcd5e964eefce0737512fb4ea263308769c671c3b1b9b1e380a5008ffef0/sip-6.1.1.tar.gz
-        sha256: 52d25af2fcd764c4e15cc9cd1350bdb0e63f52dfa2aa3c5e7679af7fde9f7e20
+        url: https://files.pythonhosted.org/packages/c6/08/34642c4db19e9d41f43640547c5a997cb9b12b512f8c61d0d476e8b9e883/sip-6.6.1.tar.gz
+        sha256: 696c575c72144122701171f2cc767fe6cc87050ea755a04909152a8508ae10c3
+        x-checker-data:
+          type: pypi
+          name: sip
       - type: file
-        url: https://files.pythonhosted.org/packages/b1/40/dd8f081f04a12912b65417979bf2097def0af0f20c89083ada3670562ac5/PyQt5_sip-12.9.0.tar.gz
-        sha256: d3e4489d7c2b0ece9d203ae66e573939f7f60d4d29e089c9f11daa17cfeaae32
+        url: https://files.pythonhosted.org/packages/e5/69/882ee5c9d017149285cab114ebeab373308ef0f874fcdac9beb90e0ac4da/ply-3.11.tar.gz
+        sha256: 00c7c1aaa88358b9c765b6d3000c6eec0ba42abca5351b095321aef446081da3
+        x-checker-data:
+          type: pypi
+          name: ply
       - type: file
-        url: https://files.pythonhosted.org/packages/8e/a4/d5e4bf99dd50134c88b95e926d7b81aad2473b47fde5e3e4eac2c69a8942/PyQt5-5.15.4.tar.gz
-        sha256: 2a69597e0dd11caabe75fae133feca66387819fc9bc050f547e5551bce97e5be
+        url: https://files.pythonhosted.org/packages/15/d1/d8798b83e953fd6f86ca9b50f93eec464a9305b0661469c8234e61095481/flit_core-3.7.1.tar.gz
+        sha256: 14955af340c43035dbfa96b5ee47407e377ee337f69e70f73064940d27d0a44f
+        x-checker-data:
+          type: pypi
+          name: flit_core
+      - type: file
+        url: https://files.pythonhosted.org/packages/a3/82/08a09deda701feb930aa6462f2f22e07cbcb9aa7c1ef361a090221b4587e/PyQt5_sip-12.10.1.tar.gz
+        sha256: 97e008795c453488f51a5c97dbff29cda7841afb1ca842c9e819d8e6cc0ae724
+        x-checker-data:
+          type: pypi
+          name: PyQt5_sip
+      - type: file
+        url: https://files.pythonhosted.org/packages/3b/27/fd81188a35f37be9b3b4c2db1654d9439d1418823916fe702ac3658c9c41/PyQt5-5.15.6.tar.gz
+        sha256: 80343bcab95ffba619f2ed2467fd828ffeb0a251ad7225be5fc06dcc333af452
+        x-checker-data:
+          type: pypi
+          name: PyQt5
 
   - name: SWIG
     config-opts:
@@ -66,14 +108,22 @@ modules:
       - type: archive
         url: https://sourceforge.net/projects/swig/files/swig/swig-4.0.2/swig-4.0.2.tar.gz
         sha256: d53be9730d8d58a16bf0cbd1f8ac0c0c3e1090573168bfa151b01eb47fa906fc
+        x-checker-data:
+          type: anitya
+          project-id: 4919
+          url-template: https://sourceforge.net/projects/swig/files/swig/swig-$version/swig-$version.tar.gz
 
   - name: gpgme
     config-opts:
       - --enable-languages=python
     sources:
       - type: archive
-        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.15.1.tar.bz2
-        sha256: eebc3c1b27f1c8979896ff361ba9bb4778b508b2496c2fc10e3775a40b1de1ad
+        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.17.1.tar.bz2
+        sha256: 711eabf5dd661b9b04be9edc9ace2a7bc031f6bd9d37a768d02d0efdef108f5f
+        x-checker-data:
+          type: anitya
+          project-id: 1239
+          url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
 
   - name: python3-requests
     buildsystem: simple
@@ -81,20 +131,41 @@ modules:
       - "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} requests"
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz
-        sha256: b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6
+        url: https://files.pythonhosted.org/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz
+        sha256: 9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d
+        x-checker-data:
+          type: pypi
+          name: idna
       - type: file
-        url: https://files.pythonhosted.org/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz
-        sha256: 27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804
+        url: https://files.pythonhosted.org/packages/60/f3/26ff3767f099b73e0efa138a9998da67890793bfa475d8278f84a30fec77/requests-2.27.1.tar.gz
+        sha256: 68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61
+        x-checker-data:
+          type: pypi
+          name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/6d/78/f8db8d57f520a54f0b8a438319c342c61c22759d8f9a1cd2e2180b5e5ea9/certifi-2021.5.30.tar.gz
-        sha256: 2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee
+        url: https://files.pythonhosted.org/packages/6c/ae/d26450834f0acc9e3d1f74508da6df1551ceab6c2ce0766a593362d6d57f/certifi-2021.10.8.tar.gz
+        sha256: 78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872
+        x-checker-data:
+          type: pypi
+          name: certifi
       - type: file
-        url: https://files.pythonhosted.org/packages/94/40/c396b5b212533716949a4d295f91a4c100d51ba95ea9e2d96b6b0517e5a5/urllib3-1.26.5.tar.gz
-        sha256: a7acd0977125325f516bda9735fa7142b909a8d01e8b2e4c8108d0984e6e0098
+        url: https://files.pythonhosted.org/packages/1b/a5/4eab74853625505725cefdf168f48661b2cd04e7843ab836f3f63abf81da/urllib3-1.26.9.tar.gz
+        sha256: aabaf16477806a5e1dd19aa41f8c2b7950dd3c746362d7e3223dbe6de6ac448e
+        x-checker-data:
+          type: pypi
+          name: urllib3
+      - type: file
+        url: https://files.pythonhosted.org/packages/56/31/7bcaf657fafb3c6db8c787a865434290b726653c912085fbd371e9b92e1c/charset-normalizer-2.0.12.tar.gz
+        sha256: 2857e29ff0d34db842cd7ca3230549d1a697f96ee6d3fb071cfa6c7393832597
+        x-checker-data:
+          type: pypi
+          name: charset-normalizer
       - type: file
         url: https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz
         sha256: 0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa
+        x-checker-data:
+          type: pypi
+          name: chardet
 
   - name: python3-socks
     buildsystem: simple
@@ -104,6 +175,9 @@ modules:
       - type: archive
         url: https://files.pythonhosted.org/packages/bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-1.7.1.tar.gz
         sha256: 3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0
+        x-checker-data:
+          type: pypi
+          name: PySocks
 
   - name: python3-packaging
     buildsystem: simple
@@ -113,12 +187,24 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
         sha256: 8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
+        x-checker-data:
+          type: pypi
+          name: six
+          packagetype: bdist_wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/3e/89/7ea760b4daa42653ece2380531c90f64788d979110a2ab51049d92f408af/packaging-20.9-py2.py3-none-any.whl
-        sha256: 67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a
+        url: https://files.pythonhosted.org/packages/05/8e/8de486cbd03baba4deef4142bd643a3e7bbe954a784dc1bb17142572d127/packaging-21.3-py3-none-any.whl
+        sha256: ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522
+        x-checker-data:
+          type: pypi
+          name: packaging
+          packagetype: bdist_wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl
-        sha256: ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b
+        url: https://files.pythonhosted.org/packages/d9/41/d9cfb4410589805cd787f8a82cddd13142d9bf7449d12adf2d05a4a7d633/pyparsing-3.0.8-py3-none-any.whl
+        sha256: ef7b523f6356f763771559412c0d7134753f037822dad1b16945b7b846f7ad06
+        x-checker-data:
+          type: pypi
+          name: pyparsing
+          packagetype: bdist_wheel
 
   - name: python3-distro
     buildsystem: simple
@@ -126,8 +212,12 @@ modules:
       - "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} distro"
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/25/b7/b3c4270a11414cb22c6352ebc7a83aaa3712043be29daa05018fd5a5c956/distro-1.5.0-py2.py3-none-any.whl
-        sha256: df74eed763e18d10d0da624258524ae80486432cd17392d9c3d96f5e83cd2799
+        url: https://files.pythonhosted.org/packages/e1/54/d08d1ad53788515392bec14d2d6e8c410bffdc127780a9a4aa8e6854d502/distro-1.7.0-py3-none-any.whl
+        sha256: d596311d707e692c2160c37807f83e3820c5d539d5a83e87cfb6babd8ba3a06b
+        x-checker-data:
+          type: pypi
+          name: distro
+          packagetype: bdist_wheel
 
   - name: torbrowser-launcher
     buildsystem: simple
@@ -135,6 +225,10 @@ modules:
       - type: archive
         url: https://github.com/micahflee/torbrowser-launcher/archive/refs/tags/v0.3.5.tar.gz
         sha256: 623cd77c6095711f371fee5b5cc521ecd8dd89d964b75fad6449633d10925089
+        x-checker-data:
+          type: anitya
+          project-id: 6359
+          url-template: https://github.com/micahflee/torbrowser-launcher/archive/refs/tags/v$version.tar.gz
       - type: patch
         path: use-flatpak-sys-prefix.patch
     build-commands:
