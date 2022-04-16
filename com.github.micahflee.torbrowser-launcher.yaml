@@ -10,10 +10,12 @@ rename-icon: torbrowser
 finish-args:
   - --share=ipc
   - --share=network
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --device=dri
   - --socket=pulseaudio
   - --filesystem=xdg-download
+  - --env=MOZ_ENABLE_WAYLAND=1
 modules:
   - shared-modules/dbus-glib/dbus-glib-0.110.json
 
