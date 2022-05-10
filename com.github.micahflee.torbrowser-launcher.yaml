@@ -1,6 +1,6 @@
 app-id: com.github.micahflee.torbrowser-launcher
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 separate-locales: false
 command: torbrowser-launcher
@@ -22,13 +22,14 @@ modules:
   - name: python3-pyqt
     buildsystem: simple
     build-commands:
-      - "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} PyQt5"
+      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        PyQt5
     cleanup:
       - /bin
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/ea/a3/3d3cbbb7150f90c4cf554048e1dceb7c6ab330e4b9138a40e130a4cc79e1/setuptools-62.1.0.tar.gz
-        sha256: 47c7b0c0f8fc10eec4cf1e71c6fdadf8decaa74ffa087e68cd1c20db7ad6a592
+        url: https://files.pythonhosted.org/packages/b1/77/75f6543eafdffc0b3f07f99682497bea817ef0b6c361fe72b932eb82459c/setuptools-62.2.0.tar.gz
+        sha256: ca6ba73b7fd5f734ae70ece8c4c1f7062b07f3352f6428f6277e27c8f5c64237
         x-checker-data:
           type: pypi
           name: setuptools
@@ -130,7 +131,8 @@ modules:
   - name: python3-requests
     buildsystem: simple
     build-commands:
-      - "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} requests"
+      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        requests
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz
@@ -172,7 +174,7 @@ modules:
   - name: python3-socks
     buildsystem: simple
     build-commands:
-      - "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/"
+      - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/
     sources:
       - type: archive
         url: https://files.pythonhosted.org/packages/bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-1.7.1.tar.gz
@@ -184,7 +186,8 @@ modules:
   - name: python3-packaging
     buildsystem: simple
     build-commands:
-      - "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} packaging"
+      - pip3 install --exists-action=i --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        packaging
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
@@ -211,7 +214,8 @@ modules:
   - name: python3-distro
     buildsystem: simple
     build-commands:
-      - "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} distro"
+      - pip3 install --exists-action=i --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        distro
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/e1/54/d08d1ad53788515392bec14d2d6e8c410bffdc127780a9a4aa8e6854d502/distro-1.7.0-py3-none-any.whl
@@ -234,7 +238,8 @@ modules:
       - type: patch
         path: use-flatpak-sys-prefix.patch
     build-commands:
-      - "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1"
+      - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1
     post-install:
-      - "sed -i 's:Icon=torbrowser:Icon=com.github.micahflee.torbrowser-launcher:' /app/share/applications/torbrowser-settings.desktop"
-      - "mv /app/share/applications/torbrowser-settings.desktop /app/share/applications/com.github.micahflee.torbrowser-launcher.settings.desktop"
+      - sed -i 's:Icon=torbrowser:Icon=com.github.micahflee.torbrowser-launcher:'
+        /app/share/applications/torbrowser-settings.desktop
+      - mv /app/share/applications/torbrowser-settings.desktop /app/share/applications/com.github.micahflee.torbrowser-launcher.settings.desktop
