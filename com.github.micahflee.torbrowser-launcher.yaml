@@ -58,8 +58,8 @@ modules:
           type: pypi
           name: toml
       - type: file
-        url: https://files.pythonhosted.org/packages/31/df/789bd0556e65cf931a5b87b603fcf02f79ff04d5379f3063588faaf9c1e4/pyparsing-3.0.8.tar.gz
-        sha256: 7bf433498c016c4314268d95df76c81b842a4cb2b276fa3312cfb1e1d85f6954
+        url: https://files.pythonhosted.org/packages/71/22/207523d16464c40a0310d2d4d8926daffa00ac1f5b1576170a32db749636/pyparsing-3.0.9.tar.gz
+        sha256: 2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb
         x-checker-data:
           type: pypi
           name: pyparsing
@@ -204,8 +204,8 @@ modules:
           name: packaging
           packagetype: bdist_wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/d9/41/d9cfb4410589805cd787f8a82cddd13142d9bf7449d12adf2d05a4a7d633/pyparsing-3.0.8-py3-none-any.whl
-        sha256: ef7b523f6356f763771559412c0d7134753f037822dad1b16945b7b846f7ad06
+        url: https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl
+        sha256: 5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc
         x-checker-data:
           type: pypi
           name: pyparsing
