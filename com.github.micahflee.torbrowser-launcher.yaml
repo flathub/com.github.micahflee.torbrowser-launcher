@@ -28,8 +28,8 @@ modules:
       - /bin
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/fb/50/005826d31d58a7b90585b5510f2f597c5406ae34df884f4f5d63abfb6ca7/setuptools-62.3.3.tar.gz
-        sha256: e7d11f3db616cda0751372244c2ba798e8e56a28e096ec4529010b803485f3fe
+        url: https://files.pythonhosted.org/packages/0c/f0/f11edc0efc7b00e26a28225621ce7584636bb3a76b1862829d42bc146fbf/setuptools-62.4.0.tar.gz
+        sha256: bf8a748ac98b09d32c9a64a995a6b25921c96cc5743c1efa82763ba80ff54e91
         x-checker-data:
           type: pypi
           name: setuptools
@@ -141,14 +141,14 @@ modules:
           type: pypi
           name: idna
       - type: file
-        url: https://files.pythonhosted.org/packages/60/f3/26ff3767f099b73e0efa138a9998da67890793bfa475d8278f84a30fec77/requests-2.27.1.tar.gz
-        sha256: 68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61
+        url: https://files.pythonhosted.org/packages/e9/23/384d9953bb968731212dc37af87cb75a885dc48e0615bd6a303577c4dc4b/requests-2.28.0.tar.gz
+        sha256: d568723a7ebd25875d8d1eaf5dfa068cd2fc8194b2e483d7b1f7c81918dbec6b
         x-checker-data:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/07/10/75277f313d13a2b74fc56e29239d5c840c2bf09f17bf25c02b35558812c6/certifi-2022.5.18.1.tar.gz
-        sha256: 9c5705e395cd70084351dd8ad5c41e65655e08ce46f2ec9cf6c2c08390f71eb7
+        url: https://files.pythonhosted.org/packages/cc/85/319a8a684e8ac6d87a1193090e06b6bbb302717496380e225ee10487c888/certifi-2022.6.15.tar.gz
+        sha256: 84c85a9078b11105f04f3036a9482ae10e4621616db313fe045dd24743a0820d
         x-checker-data:
           type: pypi
           name: certifi
