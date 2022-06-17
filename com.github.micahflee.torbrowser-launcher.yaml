@@ -28,8 +28,8 @@ modules:
       - /bin
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/fb/50/005826d31d58a7b90585b5510f2f597c5406ae34df884f4f5d63abfb6ca7/setuptools-62.3.3.tar.gz
-        sha256: e7d11f3db616cda0751372244c2ba798e8e56a28e096ec4529010b803485f3fe
+        url: https://files.pythonhosted.org/packages/6d/72/4d4b2aa376f39e954be948e3e3e2ce3b6d8e2faa1caabfdb4fec207b5456/setuptools-62.5.0.tar.gz
+        sha256: a4c782ac58fcc9e3a86e5e1a4c74cf9d24bf21e4f1562043309022e1bb76951c
         x-checker-data:
           type: pypi
           name: setuptools
@@ -40,8 +40,8 @@ modules:
           type: pypi
           name: wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/8b/5f/1bd49787262ddce37b826ef49dcccf5a9970facf0ed363dee5ee233e681d/PyQt-builder-1.12.2.tar.gz
-        sha256: f62bb688d70e0afd88c413a8d994bda824e6cebd12b612902d1945c5a67edcd7
+        url: https://files.pythonhosted.org/packages/31/36/6c73f2bd8e4ac5594f6331735951d16d0800f297473db77996966d57cfc7/PyQt-builder-1.13.0.tar.gz
+        sha256: 4877580c38ceb5320e129b381d083b0a8601c68166d8b99707f08fa0a1689eef
         x-checker-data:
           type: pypi
           name: PyQt-builder
@@ -70,8 +70,8 @@ modules:
           type: pypi
           name: six
       - type: file
-        url: https://files.pythonhosted.org/packages/c6/08/34642c4db19e9d41f43640547c5a997cb9b12b512f8c61d0d476e8b9e883/sip-6.6.1.tar.gz
-        sha256: 696c575c72144122701171f2cc767fe6cc87050ea755a04909152a8508ae10c3
+        url: https://files.pythonhosted.org/packages/5b/cb/c27c925ae07bd03a2597fa1db17bfc2a4ac57da61aeb90f8ec98ffbb975b/sip-6.6.2.tar.gz
+        sha256: 0e3efac1c5dfd8e525ae57140927df26993e13f58b89d1577c314f4105bfd90d
         x-checker-data:
           type: pypi
           name: sip
@@ -141,14 +141,14 @@ modules:
           type: pypi
           name: idna
       - type: file
-        url: https://files.pythonhosted.org/packages/60/f3/26ff3767f099b73e0efa138a9998da67890793bfa475d8278f84a30fec77/requests-2.27.1.tar.gz
-        sha256: 68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61
+        url: https://files.pythonhosted.org/packages/e9/23/384d9953bb968731212dc37af87cb75a885dc48e0615bd6a303577c4dc4b/requests-2.28.0.tar.gz
+        sha256: d568723a7ebd25875d8d1eaf5dfa068cd2fc8194b2e483d7b1f7c81918dbec6b
         x-checker-data:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/07/10/75277f313d13a2b74fc56e29239d5c840c2bf09f17bf25c02b35558812c6/certifi-2022.5.18.1.tar.gz
-        sha256: 9c5705e395cd70084351dd8ad5c41e65655e08ce46f2ec9cf6c2c08390f71eb7
+        url: https://files.pythonhosted.org/packages/cc/85/319a8a684e8ac6d87a1193090e06b6bbb302717496380e225ee10487c888/certifi-2022.6.15.tar.gz
+        sha256: 84c85a9078b11105f04f3036a9482ae10e4621616db313fe045dd24743a0820d
         x-checker-data:
           type: pypi
           name: certifi
