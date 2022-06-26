@@ -12,6 +12,7 @@ finish-args:
   - --share=network
   - --socket=wayland
   - --socket=fallback-x11
+  - --talk-name=org.freedesktop.Notifications
   - --device=dri
   - --socket=pulseaudio
   - --filesystem=xdg-download
@@ -224,6 +225,23 @@ modules:
           type: pypi
           name: distro
           packagetype: bdist_wheel
+
+  - name: libnotify
+    buildsystem: meson
+    config-opts:
+      - -Dtests=false
+      - -Dintrospection=disabled
+      - -Dman=false
+      - -Dgtk_doc=false
+      - -Ddocbook_docs=disabled
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.12.tar.xz
+        sha256: 744b2b37508135f8261b755a9debe6e09add421adc75bde930f6e198b70ab46e
+        x-checker-data:
+          type: anitya
+          project-id: 13149
+          url-template: https://download.gnome.org/sources/libnotify/$major.$minor/libnotify-$version.tar.xz
 
   - name: torbrowser-launcher
     buildsystem: simple
