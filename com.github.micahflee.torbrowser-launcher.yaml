@@ -41,8 +41,8 @@ modules:
           type: pypi
           name: wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/8b/5f/1bd49787262ddce37b826ef49dcccf5a9970facf0ed363dee5ee233e681d/PyQt-builder-1.12.2.tar.gz
-        sha256: f62bb688d70e0afd88c413a8d994bda824e6cebd12b612902d1945c5a67edcd7
+        url: https://files.pythonhosted.org/packages/31/36/6c73f2bd8e4ac5594f6331735951d16d0800f297473db77996966d57cfc7/PyQt-builder-1.13.0.tar.gz
+        sha256: 4877580c38ceb5320e129b381d083b0a8601c68166d8b99707f08fa0a1689eef
         x-checker-data:
           type: pypi
           name: PyQt-builder
@@ -71,8 +71,8 @@ modules:
           type: pypi
           name: six
       - type: file
-        url: https://files.pythonhosted.org/packages/c6/08/34642c4db19e9d41f43640547c5a997cb9b12b512f8c61d0d476e8b9e883/sip-6.6.1.tar.gz
-        sha256: 696c575c72144122701171f2cc767fe6cc87050ea755a04909152a8508ae10c3
+        url: https://files.pythonhosted.org/packages/5b/cb/c27c925ae07bd03a2597fa1db17bfc2a4ac57da61aeb90f8ec98ffbb975b/sip-6.6.2.tar.gz
+        sha256: 0e3efac1c5dfd8e525ae57140927df26993e13f58b89d1577c314f4105bfd90d
         x-checker-data:
           type: pypi
           name: sip
@@ -89,14 +89,14 @@ modules:
           type: pypi
           name: flit_core
       - type: file
-        url: https://files.pythonhosted.org/packages/a3/82/08a09deda701feb930aa6462f2f22e07cbcb9aa7c1ef361a090221b4587e/PyQt5_sip-12.10.1.tar.gz
-        sha256: 97e008795c453488f51a5c97dbff29cda7841afb1ca842c9e819d8e6cc0ae724
+        url: https://files.pythonhosted.org/packages/39/5f/fd9384fdcb9cd0388088899c110838007f49f5da1dd1ef6749bfb728a5da/PyQt5_sip-12.11.0.tar.gz
+        sha256: b4710fd85b57edef716cc55fae45bfd5bfac6fc7ba91036f1dcc3f331ca0eb39
         x-checker-data:
           type: pypi
           name: PyQt5_sip
       - type: file
-        url: https://files.pythonhosted.org/packages/3b/27/fd81188a35f37be9b3b4c2db1654d9439d1418823916fe702ac3658c9c41/PyQt5-5.15.6.tar.gz
-        sha256: 80343bcab95ffba619f2ed2467fd828ffeb0a251ad7225be5fc06dcc333af452
+        url: https://files.pythonhosted.org/packages/e1/57/2023316578646e1adab903caab714708422f83a57f97eb34a5d13510f4e1/PyQt5-5.15.7.tar.gz
+        sha256: 755121a52b3a08cb07275c10ebb96576d36e320e572591db16cfdbc558101594
         x-checker-data:
           type: pypi
           name: PyQt5
@@ -154,8 +154,8 @@ modules:
           type: pypi
           name: idna
       - type: file
-        url: https://files.pythonhosted.org/packages/e9/23/384d9953bb968731212dc37af87cb75a885dc48e0615bd6a303577c4dc4b/requests-2.28.0.tar.gz
-        sha256: d568723a7ebd25875d8d1eaf5dfa068cd2fc8194b2e483d7b1f7c81918dbec6b
+        url: https://files.pythonhosted.org/packages/a5/61/a867851fd5ab77277495a8709ddda0861b28163c4613b011bc00228cc724/requests-2.28.1.tar.gz
+        sha256: 7c5599b102feddaa661c826c56ab4fee28bfd17f5abca1ebbe3e7f19d7c97983
         x-checker-data:
           type: pypi
           name: requests
@@ -172,8 +172,8 @@ modules:
           type: pypi
           name: urllib3
       - type: file
-        url: https://files.pythonhosted.org/packages/56/31/7bcaf657fafb3c6db8c787a865434290b726653c912085fbd371e9b92e1c/charset-normalizer-2.0.12.tar.gz
-        sha256: 2857e29ff0d34db842cd7ca3230549d1a697f96ee6d3fb071cfa6c7393832597
+        url: https://files.pythonhosted.org/packages/93/1d/d9392056df6670ae2a29fcb04cfa5cee9f6fbde7311a1bb511d4115e9b7a/charset-normalizer-2.1.0.tar.gz
+        sha256: 575e708016ff3a5e3681541cb9d79312c416835686d054a23accb873b254f413
         x-checker-data:
           type: pypi
           name: charset-normalizer
