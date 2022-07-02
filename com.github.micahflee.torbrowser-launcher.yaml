@@ -2,6 +2,13 @@ app-id: com.github.micahflee.torbrowser-launcher
 runtime: org.kde.Platform
 runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
+base: com.riverbankcomputing.PyQt.BaseApp
+base-version: 5.15-21.08
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
+build-options:
+  env:
+    - BASEAPP_REMOVE_WEBENGINE=1
 separate-locales: false
 command: torbrowser-launcher
 rename-desktop-file: torbrowser.desktop
@@ -20,86 +27,7 @@ finish-args:
 modules:
   - shared-modules/dbus-glib/dbus-glib-0.110.json
 
-  - name: python3-pyqt
-    buildsystem: simple
-    build-commands:
-      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
-        PyQt5
-    cleanup:
-      - /bin
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/dc/73/88920663229023b724a854d1ab7e3e50a1a28b63eeec399a604ba30f9242/setuptools-62.6.0.tar.gz
-        sha256: 990a4f7861b31532871ab72331e755b5f14efbe52d336ea7f6118144dd478741
-        x-checker-data:
-          type: pypi
-          name: setuptools
-      - type: file
-        url: https://files.pythonhosted.org/packages/c0/6c/9f840c2e55b67b90745af06a540964b73589256cb10cc10057c87ac78fc2/wheel-0.37.1.tar.gz
-        sha256: e9a504e793efbca1b8e0e9cb979a249cf4a0a7b5b8c9e8b65a5e39d49529c1c4
-        x-checker-data:
-          type: pypi
-          name: wheel
-      - type: file
-        url: https://files.pythonhosted.org/packages/8b/5f/1bd49787262ddce37b826ef49dcccf5a9970facf0ed363dee5ee233e681d/PyQt-builder-1.12.2.tar.gz
-        sha256: f62bb688d70e0afd88c413a8d994bda824e6cebd12b612902d1945c5a67edcd7
-        x-checker-data:
-          type: pypi
-          name: PyQt-builder
-      - type: file
-        url: https://files.pythonhosted.org/packages/df/9e/d1a7217f69310c1db8fdf8ab396229f55a699ce34a203691794c5d1cad0c/packaging-21.3.tar.gz
-        sha256: dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb
-        x-checker-data:
-          type: pypi
-          name: packaging
-      - type: file
-        url: https://files.pythonhosted.org/packages/be/ba/1f744cdc819428fc6b5084ec34d9b30660f6f9daaf70eead706e3203ec3c/toml-0.10.2.tar.gz
-        sha256: b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f
-        x-checker-data:
-          type: pypi
-          name: toml
-      - type: file
-        url: https://files.pythonhosted.org/packages/71/22/207523d16464c40a0310d2d4d8926daffa00ac1f5b1576170a32db749636/pyparsing-3.0.9.tar.gz
-        sha256: 2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb
-        x-checker-data:
-          type: pypi
-          name: pyparsing
-      - type: file
-        url: https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz
-        sha256: 1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926
-        x-checker-data:
-          type: pypi
-          name: six
-      - type: file
-        url: https://files.pythonhosted.org/packages/c6/08/34642c4db19e9d41f43640547c5a997cb9b12b512f8c61d0d476e8b9e883/sip-6.6.1.tar.gz
-        sha256: 696c575c72144122701171f2cc767fe6cc87050ea755a04909152a8508ae10c3
-        x-checker-data:
-          type: pypi
-          name: sip
-      - type: file
-        url: https://files.pythonhosted.org/packages/e5/69/882ee5c9d017149285cab114ebeab373308ef0f874fcdac9beb90e0ac4da/ply-3.11.tar.gz
-        sha256: 00c7c1aaa88358b9c765b6d3000c6eec0ba42abca5351b095321aef446081da3
-        x-checker-data:
-          type: pypi
-          name: ply
-      - type: file
-        url: https://files.pythonhosted.org/packages/15/d1/d8798b83e953fd6f86ca9b50f93eec464a9305b0661469c8234e61095481/flit_core-3.7.1.tar.gz
-        sha256: 14955af340c43035dbfa96b5ee47407e377ee337f69e70f73064940d27d0a44f
-        x-checker-data:
-          type: pypi
-          name: flit_core
-      - type: file
-        url: https://files.pythonhosted.org/packages/a3/82/08a09deda701feb930aa6462f2f22e07cbcb9aa7c1ef361a090221b4587e/PyQt5_sip-12.10.1.tar.gz
-        sha256: 97e008795c453488f51a5c97dbff29cda7841afb1ca842c9e819d8e6cc0ae724
-        x-checker-data:
-          type: pypi
-          name: PyQt5_sip
-      - type: file
-        url: https://files.pythonhosted.org/packages/3b/27/fd81188a35f37be9b3b4c2db1654d9439d1418823916fe702ac3658c9c41/PyQt5-5.15.6.tar.gz
-        sha256: 80343bcab95ffba619f2ed2467fd828ffeb0a251ad7225be5fc06dcc333af452
-        x-checker-data:
-          type: pypi
-          name: PyQt5
+  - name: PyQtApp
 
   - name: SWIG
     config-opts:
