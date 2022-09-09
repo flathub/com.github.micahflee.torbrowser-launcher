@@ -56,6 +56,13 @@ modules:
           type: anitya
           project-id: 1239
           url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
+      - type: shell
+        commands:
+          - sed -i 's/3.9/3.10/g' configure
+    post-install:
+      - mv /app/lib/python3.10/site-packages/gpg-1.18.0-*.egg/gpg /app/lib/python3.10/site-packages/
+      - mv /app/lib/python3.10/site-packages/gpg-1.18.0-*.egg/EGG-INFO /app/lib/python3.10/site-packages/gpg-1.18.0-py3.10.egg-info
+      - rm -r /app/lib/python3.10/site-packages/gpg-1.18.0-*.egg
 
   - name: python3-requests
     buildsystem: simple
