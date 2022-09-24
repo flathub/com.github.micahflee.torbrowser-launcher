@@ -64,8 +64,8 @@ modules:
         requests
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/cc/83/7ea9d9b3a6ff3225aca2fce5e4df373bee7e0a74c539711a4fbfda53374f/setuptools-65.3.0.tar.gz
-        sha256: 7732871f4f7fa58fb6bdcaeadb0161b2bd046c85905dbaa066bdcbcc81953b57
+        url: https://files.pythonhosted.org/packages/4c/61/86c94ae2cccb05749abfb1b2961125d40368c8f03ac59275550c45e634f1/setuptools-65.4.0.tar.gz
+        sha256: a8f6e213b4b0661f590ccf40de95d28a177cd747d098624ad3f69c40287297e9
         x-checker-data:
           type: pypi
           name: setuptools
@@ -76,8 +76,8 @@ modules:
           type: pypi
           name: wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz
-        sha256: 9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d
+        url: https://files.pythonhosted.org/packages/8b/e1/43beb3d38dba6cb420cefa297822eac205a277ab43e5ba5d5c46faf96438/idna-3.4.tar.gz
+        sha256: 814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4
         x-checker-data:
           type: pypi
           name: idna
@@ -88,8 +88,8 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/05/a8/e0966dcf948a9ab9321f23f121a37b96be191b15dc28e9134927fd42a8af/certifi-2022.6.15.2.tar.gz
-        sha256: aa08c101214127b9b0472ca6338315113c9487d45376fd3e669201b477c71003
+        url: https://files.pythonhosted.org/packages/cb/a4/7de7cd59e429bd0ee6521ba58a75adaec136d32f91a761b28a11d8088d44/certifi-2022.9.24.tar.gz
+        sha256: 0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14
         x-checker-data:
           type: pypi
           name: certifi
