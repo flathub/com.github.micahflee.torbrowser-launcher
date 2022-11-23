@@ -108,9 +108,6 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/a1/34/44964211e5410b051e4b8d2869c470ae8a68ae274953b1c7de6d98bbcf94/charset-normalizer-2.1.1.tar.gz
         sha256: 5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845
-        x-checker-data:
-          type: pypi
-          name: charset-normalizer
       - type: file
         url: https://files.pythonhosted.org/packages/31/a2/12c090713b3d0e141f367236d3a8bdc3e5fca0d83ff3647af4892c16c205/chardet-5.0.0.tar.gz
         sha256: 0368df2bfd78b5fc20572bb4e9bb7fb53e2c094f60ae9993339e8671d0afb8aa
