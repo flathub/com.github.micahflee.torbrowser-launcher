@@ -64,8 +64,8 @@ modules:
         requests
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/f8/b8/fe1dfb94342906c65acfda3d8f35984c87e0511bf574942c22aed756d0f6/setuptools-65.6.2.tar.gz
-        sha256: 41fa68ecac9e099122990d7437bc10683b966c32a591caa2824dffcffd5dea7a
+        url: https://files.pythonhosted.org/packages/b6/21/cb9a8d0b2c8597c83fce8e9c02884bce3d4951e41e807fc35791c6b23d9a/setuptools-65.6.3.tar.gz
+        sha256: a7620757bf984b58deaf32fc8a4577a9bbc0850cf92c20e1ce41c38c19e5fb75
         x-checker-data:
           type: pypi
           name: setuptools
