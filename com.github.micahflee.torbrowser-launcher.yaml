@@ -190,8 +190,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://github.com/micahflee/torbrowser-launcher/archive/refs/tags/v0.3.5.tar.gz
-        sha256: 623cd77c6095711f371fee5b5cc521ecd8dd89d964b75fad6449633d10925089
+        url: https://github.com/micahflee/torbrowser-launcher/archive/refs/tags/v0.3.6.tar.gz
+        sha256: 9de3207d940b0043346e4ccfa468ffa89c61bcce8239ba3ac854506b81967b09
         x-checker-data:
           type: anitya
           project-id: 6359
