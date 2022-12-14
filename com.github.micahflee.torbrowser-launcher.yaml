@@ -191,7 +191,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/micahflee/torbrowser-launcher/archive/refs/tags/v0.3.6.tar.gz
-        sha256: 9de3207d940b0043346e4ccfa468ffa89c61bcce8239ba3ac854506b81967b09
+        sha256: 39db8bd936502bc6d9adf3a628fba13a728c7b1aa2b5bac148454c8718863654
         x-checker-data:
           type: anitya
           project-id: 6359
