@@ -1,9 +1,9 @@
 app-id: com.github.micahflee.torbrowser-launcher
 runtime: org.kde.Platform
-runtime-version: 5.15-21.08
+runtime-version: 5.15-22.08
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: 5.15-21.08
+base-version: 5.15-22.08
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 build-options:
@@ -25,7 +25,7 @@ finish-args:
   - --filesystem=xdg-download
   - --env=MOZ_ENABLE_WAYLAND=1
 modules:
-  - shared-modules/dbus-glib/dbus-glib-0.110.json
+  - shared-modules/dbus-glib/dbus-glib.json
 
   - name: PyQtApp
 
@@ -56,6 +56,13 @@ modules:
           type: anitya
           project-id: 1239
           url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
+      - type: shell
+        commands:
+          - sed -i 's/3.9/3.10/g' configure
+    post-install:
+      - mv /app/lib/python3.10/site-packages/gpg-1.18.0-*.egg/gpg /app/lib/python3.10/site-packages/
+      - mv /app/lib/python3.10/site-packages/gpg-1.18.0-*.egg/EGG-INFO /app/lib/python3.10/site-packages/gpg-1.18.0-py3.10.egg-info
+      - rm -r /app/lib/python3.10/site-packages/gpg-1.18.0-*.egg
 
   - name: python3-requests
     buildsystem: simple
