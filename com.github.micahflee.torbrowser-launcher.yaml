@@ -50,19 +50,16 @@ modules:
       - --enable-languages=python
     sources:
       - type: archive
-        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.18.0.tar.bz2
-        sha256: 361d4eae47ce925dba0ea569af40e7b52c645c4ae2e65e5621bf1b6cdd8b0e9e
+        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.19.0.tar.bz2
+        sha256: cb58494dc415fba9eeb12b826550ad3190dc92e265c5bb2ae1a21c92841cfd38
         x-checker-data:
           type: anitya
           project-id: 1239
           url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
-      - type: shell
-        commands:
-          - sed -i 's/3.9/3.10/g' configure
     post-install:
-      - mv /app/lib/python3.10/site-packages/gpg-1.18.0-*.egg/gpg /app/lib/python3.10/site-packages/
-      - mv /app/lib/python3.10/site-packages/gpg-1.18.0-*.egg/EGG-INFO /app/lib/python3.10/site-packages/gpg-1.18.0-py3.10.egg-info
-      - rm -r /app/lib/python3.10/site-packages/gpg-1.18.0-*.egg
+      - mv /app/lib/python3.10/site-packages/gpg-1.19.0-*.egg/gpg /app/lib/python3.10/site-packages/
+      - mv /app/lib/python3.10/site-packages/gpg-1.19.0-*.egg/EGG-INFO /app/lib/python3.10/site-packages/gpg-1.19.0-py3.10.egg-info
+      - rm -r /app/lib/python3.10/site-packages/gpg-1.19.0-*.egg
 
   - name: python3-requests
     buildsystem: simple
@@ -71,8 +68,8 @@ modules:
         requests
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/25/f3/d68c20919bc774c6cb127f1762f2f2f999d700a58198556e883dd3700e58/setuptools-67.6.0.tar.gz
-        sha256: 2ee892cd5f29f3373097f5a814697e397cf3ce313616df0af11231e2ad118077
+        url: https://files.pythonhosted.org/packages/cb/46/22ec35f286a77e6b94adf81b4f0d59f402ed981d4251df0ba7b992299146/setuptools-67.6.1.tar.gz
+        sha256: 257de92a9d50a60b8e22abfcbb771571fde0dbf3ec234463212027a4eeecbe9a
         x-checker-data:
           type: pypi
           name: setuptools
