@@ -40,7 +40,7 @@ finish-args:
   - --system-talk-name=org.freedesktop.login1
   - --system-talk-name=org.freedesktop.UPower
   # Music player widget
-  - --own-name="org.mpris.MediaPlayer2.firefox.*"
+  - --own-name=org.mpris.MediaPlayer2.firefox.*
 modules:
   - shared-modules/dbus-glib/dbus-glib.json
 
