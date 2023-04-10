@@ -20,10 +20,27 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --talk-name=org.freedesktop.Notifications
-  - --device=dri
+  # Webcam
+  - --device=all
   - --socket=pulseaudio
-  - --filesystem=xdg-download
+  # Smartcard
+  - --socket=pcsc
+  # Printer
+  - --socket=cups
+  # No need to read files downloaded by other applications 
+  - --filesystem=xdg-download:create
   - --env=MOZ_ENABLE_WAYLAND=1
+  # https://searchfox.org/mozilla-central/rev/504bd0a7ee3110ecb2b31f89b9ce54faf76e228b/taskcluster/docker/firefox-flatpak/runme.sh#153-161
+  - --talk-name=org.freedesktop.FileManager1
+  - --talk-name=org.gnome.SessionManager
+  - --talk-name=org.freedesktop.ScreenSaver
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.gtk.vfs.*
+  - --system-talk-name=org.freedesktop.RealtimeKit1
+  - --system-talk-name=org.freedesktop.login1
+  - --system-talk-name=org.freedesktop.UPower
+  # Music player widget
+  - --own-name="org.mpris.MediaPlayer2.firefox.*"
 modules:
   - shared-modules/dbus-glib/dbus-glib.json
 
