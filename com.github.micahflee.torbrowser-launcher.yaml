@@ -109,6 +109,9 @@ modules:
         x-checker-data:
           type: pypi
           name: urllib3
+          versions:
+            <: '2'
+            '>=': '1.21.1'
       - type: file
         url: https://files.pythonhosted.org/packages/a1/34/44964211e5410b051e4b8d2869c470ae8a68ae274953b1c7de6d98bbcf94/charset-normalizer-2.1.1.tar.gz
         sha256: 5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845
