@@ -104,8 +104,8 @@ modules:
           type: pypi
           name: certifi
       - type: file
-        url: https://files.pythonhosted.org/packages/21/79/6372d8c0d0641b4072889f3ff84f279b738cd8595b64c8e0496d4e848122/urllib3-1.26.15.tar.gz
-        sha256: 8a388717b9476f934a21484e8c8e61875ab60644d29b9b39e11e4b9dc1c6b305
+        url: https://files.pythonhosted.org/packages/e2/7d/539e6f0cf9f0b95b71dd701a56dae89f768cd39fd8ce0096af3546aeb5a3/urllib3-1.26.16.tar.gz
+        sha256: 8f135f6502756bde6b2a9b28989df5fbe87c9970cecaa69041edcce7f0589b14
         x-checker-data:
           type: pypi
           name: urllib3
