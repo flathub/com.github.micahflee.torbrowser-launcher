@@ -74,8 +74,8 @@ modules:
           type: pypi
           name: setuptools
       - type: file
-        url: https://files.pythonhosted.org/packages/fc/ef/0335f7217dd1e8096a9e8383e1d472aa14717878ffe07c4772e68b6e8735/wheel-0.40.0.tar.gz
-        sha256: cd1196f3faee2b31968d626e1731c94f99cbdb67cf5a46e4f5656cbee7738873
+        url: https://files.pythonhosted.org/packages/ec/34/903929e15b2657335b2ce8723d92fc804d3569b7ac0f1f8877ed1a7b2024/wheel-0.41.0.tar.gz
+        sha256: 55a0f0a5a84869bce5ba775abfd9c462e3a6b1b7b7ec69d72c0b83d673a5114d
         x-checker-data:
           type: pypi
           name: wheel
@@ -98,8 +98,8 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/93/71/752f7a4dd4c20d6b12341ed1732368546bc0ca9866139fe812f6009d9ac7/certifi-2023.5.7.tar.gz
-        sha256: 0f0d56dc5a6ad56fd4ba36484d6cc34451e1c6548c61daad8c320169f91eddc7
+        url: https://files.pythonhosted.org/packages/98/98/c2ff18671db109c9f10ed27f5ef610ae05b73bd876664139cf95bd1429aa/certifi-2023.7.22.tar.gz
+        sha256: 539cc1d13202e33ca466e88b2807e29f4c13049d6d87031a3c110744495cb082
         x-checker-data:
           type: pypi
           name: certifi
