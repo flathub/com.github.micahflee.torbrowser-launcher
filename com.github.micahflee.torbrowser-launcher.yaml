@@ -50,16 +50,16 @@ modules:
       - --enable-languages=python
     sources:
       - type: archive
-        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.21.0.tar.bz2
-        sha256: 416e174e165734d84806253f8c96bda2993fd07f258c3aad5f053a6efd463e88
+        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
+        sha256: 9551e37081ad3bde81018a0d24f245c3f8206990549598fb31a97a68380a7b71
         x-checker-data:
           type: anitya
           project-id: 1239
           url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
     post-install:
-      - mv /app/lib/python3.10/site-packages/gpg-1.21.0-*.egg/gpg /app/lib/python3.10/site-packages/
-      - mv /app/lib/python3.10/site-packages/gpg-1.21.0-*.egg/EGG-INFO /app/lib/python3.10/site-packages/gpg-1.21.0-py3.10.egg-info
-      - rm -r /app/lib/python3.10/site-packages/gpg-1.21.0-*.egg
+      - mv /app/lib/python3.10/site-packages/gpg-1.22.0-*.egg/gpg /app/lib/python3.10/site-packages/
+      - mv /app/lib/python3.10/site-packages/gpg-1.22.0-*.egg/EGG-INFO /app/lib/python3.10/site-packages/gpg-1.22.0-py3.10.egg-info
+      - rm -r /app/lib/python3.10/site-packages/gpg-1.22.0-*.egg
 
   - name: python3-requests
     buildsystem: simple
@@ -74,8 +74,8 @@ modules:
           type: pypi
           name: setuptools
       - type: file
-        url: https://files.pythonhosted.org/packages/c9/3d/02a14af2b413d7abf856083f327744d286f4468365cddace393a43d9d540/wheel-0.41.1.tar.gz
-        sha256: 12b911f083e876e10c595779709f8a88a59f45aacc646492a67fe9ef796c1b47
+        url: https://files.pythonhosted.org/packages/a4/99/78c4f3bd50619d772168bec6a0f34379b02c19c9cced0ed833ecd021fd0d/wheel-0.41.2.tar.gz
+        sha256: 0c5ac5ff2afb79ac23ab82bab027a0be7b5dbcf2e54dc50efe4bf507de1f7985
         x-checker-data:
           type: pypi
           name: wheel
