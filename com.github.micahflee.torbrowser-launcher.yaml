@@ -22,7 +22,7 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --device=dri
   - --socket=pulseaudio
-  - --filesystem=xdg-download
+  - --filesystem=xdg-download:create
   - --env=MOZ_ENABLE_WAYLAND=1
 modules:
   - shared-modules/dbus-glib/dbus-glib.json
