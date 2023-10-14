@@ -212,7 +212,7 @@ modules:
       - type: patch
         path: use-flatpak-sys-prefix.patch
       - type: patch
-        path: fix-tbb-archive-arch-name.patch
+        path: fix-tbb-archive-name-format.patch
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1
     post-install:
