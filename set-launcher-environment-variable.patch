@@ -1,0 +1,29 @@
+From f4d2e314bfafaed8f24a00401a64c0605ac93270 Mon Sep 17 00:00:00 2001
+From: Nicolas Vigier <boklm@torproject.org>
+Date: Mon, 8 Jan 2024 11:29:20 +0100
+Subject: [PATCH] Set the TORBROWSER_LAUNCHER environment variable (#8)
+
+Set an environment variable to make it easier for Tor Browser to see
+that torbrowser-launcher is being used.
+---
+ torbrowser_launcher/__init__.py | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/torbrowser_launcher/__init__.py b/torbrowser_launcher/__init__.py
+index 9614911..27ab335 100644
+--- a/torbrowser_launcher/__init__.py
++++ b/torbrowser_launcher/__init__.py
+@@ -64,6 +64,10 @@ def main():
+     settings = bool(args.settings)
+     url_list = args.url
+ 
++    # Set the TORBROWSER_LAUNCHER env variable to make it easier to
++    # detect that torbrowser-launcher is being used
++    os.environ["TORBROWSER_LAUNCHER"] = "1"
++
+     # Load the version and print the banner
+     with open(os.path.join(SHARE, "version")) as buf:
+         tor_browser_launcher_version = buf.read().strip()
+-- 
+2.43.0
+
